@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <!--Khai báo hỗ trợ responsive-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Trang Tổng Quan</title>
+    <!--Thêm thư viện CSS bootstrap-->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="fontawesome/css/all.css" media="all">
+    <link href="css/main.css" rel="stylesheet" />
+</head>
+
+<body>
+    <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+        <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="#">Admin</a>
+        <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-toggle="collapse"
+            data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">
+        
+        <ul class="navbar-nav px-3">
+            <li class="nav-item text-nowrap">
+                <a class="nav-link" href="#">Sign in</a>
+            </li>
+        </ul>
+
+        <ul class="navbar-nav px-3">
+            <li class="nav-item text-nowrap">
+                <a class="nav-link" href="#">Registration</a>
+            </li>
+        </ul>
+
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+                <div class="sidebar-sticky pt-3">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="admin.html">
+                                <i class="fas fa-home"></i>
+                                Home <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="survey.html">
+                                <i class="fas fa-poll-h"></i>
+                                Survey
+                            </a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="order.html">
+                                <i class="fas fa-shopping-cart"></i>
+                                Orders
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="customer.html">
+                                <i class="fas fa-tablets"></i>
+                                Customer
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="">
+                                <i class="fas fa-paper-plane"></i>
+                                Actions
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="">
+                                <i class="fas fa-poll"></i>
+                                Results Dashboard
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+
+            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+                <div
+                    class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                    <h1 class="h2">Dashboard Today</h1>
+                </div>
+                <!--Card-->
+                <div class="row">
+                    <canvas class="my-4 w-100" id="myChart" width="900" height="380"></canvas>
+                    <canvas class="my-4 w-100" id="pieChart" width="900" height="380"></canvas>
+                    
+                    
+                </div>
+                <!--/End card-->
+            </main>
+            
+        </div>
+        
+    </div>
+    
+    <script src="jquery/jquery-3.5.1.min.js"></script>
+    <!--Thêm thư viện JS bootstrap-->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <!--Chart-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+    <!--Custom JS-->
+    <script src="js/main.js"></script>
+    
+</body>
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3">
+                <h3 class="hcolor" style="text-align: right;">Statistical</h3>
+                <ul class="list-unstyled">
+                    <li style="text-align: right; color: coral; font-size: medium;">Number of hits: 25</li>
+                </ul>
+            </div>
+            
+            <div class="col-sm-3">
+                <h3 class="hcolor" style="margin-left: 45%;">Contact</h3>
+                <ul class="list-unstyled" style="text-align:right">                            
+                    <li style="color: coral; font-size: medium;"><i class="fab fa-facebook"; style="color: black;"></i> Facebook:<a href="https://www.facebook.com/profile.php?id=100006294558139"> Công Nguyên</a>
+                    </li>
+                    <li  style="color: coral;"><i class="fas fa-envelope-square" style="color:black"></i> Email:congnguyen3107@gmail.com</a>
+                    </li>
+                    
+            </div>
+            
+            <div class="col-sm-3">
+                <h3 class="hcolor" style="text-align: right;">Other services</h3>
+                <ul class="list-unstyled" style="text-align:right"> 
+                <li class="far fa-credit-card" style="font-size: medium;"> <a href="">Online payment support</a>
+                </li>
+                <li style="color: coral; font-size: medium;"> <a href="">Payment at transaction counters</a>
+                </li>
+            </ul>
+            </div>
+
+            <div class="col-sm-3">
+                <h3 class="hcolor" style="margin-left: 40%;">About</h3>
+                <ul class="list-unstyled" style="text-align:right">
+                <li style="color: coral; font-size: medium;">Hotline 1 :<a href=""> 0964660651 </a>
+                </li>
+                <li style="color: coral; font-size: medium;">Hotline 2 :<a href=""> 0702763437 </a>
+                </li>
+            </ul>
+            </div>
+
+        </div>
+    </div>
+    <div class="copyright">
+        <div class="container">
+            <p style="text-align:center; font-size: medium; color: orangered;">Survey Creator & Manager Copyright by <a href="https://www.facebook.com/profile.php?id=100006294558139"><b style="color:  black;"> Cong Nguyen</b></a> Designed by <a href="https://www.facebook.com/profile.php?id=100006294558139"><b style="color:  black;"> Cong Nguyen</b></a</p>
+        </div>
+    </div>
+</footer>
+
+</html>
+

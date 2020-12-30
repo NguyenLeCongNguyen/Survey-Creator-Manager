@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <title>Survey Creator & Manager</title>
+  <link rel="stylesheet" href="survey.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script  type="text/javascript" src="survey.js"></script>
+</head>
+
+<body>
+  
+    <a class="nav-link active" href="admin.html" style="color: #0000CD; font-size:25px;">
+        <i class="fas fa-home"></i>Home
+    </a>
+
+
+<div class="rb-box">
+  <h1 style="color: #00FA9A;">Surveying Vietnamese needs to see movies in theaters precent</h1>
+
+  <form>
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" style="height:80px; width:100%" placeholder="Enter your name" required>
+  </form>
+
+  <br></br>
+  
+  <form name="email">
+    <label for="email">Email</label>
+    <input type="text" id="email" name="email" style="height:80px; width:100%" placeholder="Enter your email" required>
+  </form>
+
+
+    <p>1. How old are you?</p>
+    <div id="rb-1" class="rb">
+      <div class="rb-tab rb-tab-active" data-value="1">
+        <div class="rb-spot">
+          <span class="rb-txt">I'm not 18 yet</span>
+        </div>
+      </div><div class="rb-tab" data-value="2">
+        <div class="rb-spot">
+
+          <span class="rb-txt">18 years old ~ 25 years old</span>
+        </div>
+      </div><div class="rb-tab" data-value="3">
+        <div class="rb-spot">
+          <span class="rb-txt">26 years old ~ 45 years old</span>
+        </div>
+      </div><div class="rb-tab" data-value="4">
+        <div class="rb-spot">
+          <span class="rb-txt">Over 45 years old</span>
+        </div>
+      </div><div class="rb-tab" data-value="5">
+        <div class="rb-spot">
+          <span class="rb-txt">Other</span>
+        </div>
+      </div>
+    </div>
+
+    <p>2. What is your gender?</p>
+    <div id="rb-2" class="rb">
+      <div class="rb-tab rb-tab-active" data-value="1">
+        <div class="rb-spot">
+          <span class="rb-txt">Male</span>
+        </div>
+      </div><div class="rb-tab" data-value="2">
+        <div class="rb-spot">
+          <span class="rb-txt">Female</span>
+        </div>
+      </div>
+      <div class="rb-tab" data-value="3">
+        <div class="rb-spot">
+          <span class="rb-txt">LGBT</span>
+        </div>
+      </div>
+    </div>
+
+    <p>3. How many movie tickets do you usually buy in one go?</p>
+    <div id="rb-3" class="rb">
+      <div class="rb-tab rb-tab-active" data-value="1">
+        <div class="rb-spot">
+          <span class="rb-txt">1</span>
+        </div>
+      </div><div class="rb-tab" data-value="2">
+        <div class="rb-spot">
+          <span class="rb-txt">7</span>
+        </div>
+      </div><div class="rb-tab" data-value="3">
+        <div class="rb-spot">
+          <span class="rb-txt">8</span>
+        </div>
+      </div><div class="rb-tab" data-value="4">
+        <div class="rb-spot">
+          <span class="rb-txt">2</span>
+        </div>
+      </div><div class="rb-tab" data-value="5">
+        <div class="rb-spot">
+          <span class="rb-txt">3</span>
+        </div>
+      </div>
+    </div>
+  
+    <p>4. Who do you usually go to the movies with?</p>
+    <div id="rb-4" class="rb">
+      <div class="rb-tab rb-tab-active" data-value="1">
+        <div class="rb-spot">
+          <span class="rb-txt">Alone</span>
+        </div>
+      </div><div class="rb-tab" data-value="2">
+        <div class="rb-spot">
+          <span class="rb-txt">Colleagues</span>
+        </div>
+      </div><div class="rb-tab" data-value="3">
+        <div class="rb-spot">
+          <span class="rb-txt">Boy friend/Girl friend</span>
+        </div>
+      </div><div class="rb-tab" data-value="4">
+        <div class="rb-spot">
+          <span class="rb-txt">Friends</span>
+        </div>
+      </div><div class="rb-tab" data-value="5">
+        <div class="rb-spot">
+          <span class="rb-txt">Wife/Husband</span>
+        </div>
+      </div>
+    </div>
+
+    <p>5. How much do you usually buy movie tickets for?</p>
+    <div id="rb-5" class="rb">
+      <div class="rb-tab" data-value="1">
+        <div class="rb-spot">
+          <span class="rb-txt">15$</span>
+        </div>
+      </div><div class="rb-tab rb-tab-active" data-value="2">
+        <div class="rb-spot">
+          <span class="rb-txt">10$</span>
+        </div>
+      </div><div class="rb-tab" data-value="3">
+        <div class="rb-spot">
+          <span class="rb-txt">2.5$</span>
+        </div>
+      </div><div class="rb-tab" data-value="4">
+        <div class="rb-spot">
+          <span class="rb-txt">7$</span>
+        </div>
+      </div><div class="rb-tab" data-value="5">
+        <div class="rb-spot">
+          <span class="rb-txt">5$</span>
+        </div>
+      </div>
+    </div>
+  
+    <p>6. How often do you go to the cinema?</p>
+    <div id="rb-6" class="rb">
+      <div class="rb-tab rb-tab-active" data-value="1">
+        <div class="rb-spot">
+          <span class="rb-txt">1 time / day</span>
+        </div>
+      </div><div class="rb-tab" data-value="2">
+        <div class="rb-spot">
+          <span class="rb-txt">2 ~ 3 times / week</span>
+        </div>
+      </div><div class="rb-tab" data-value="3">
+        <div class="rb-spot">
+          <span class="rb-txt">4 ~ 5 times / month</span>
+        </div>
+      </div><div class="rb-tab" data-value="4">
+        <div class="rb-spot">
+          <span class="rb-txt">Less than 10 times / month</span>
+        </div>
+      </div><div class="rb-tab" data-value="5">
+        <div class="rb-spot">
+          <span class="rb-txt">Other</span>
+        </div>
+      </div>
+    </div>
+
+    <p>7. Which movie theater do you usually go to?</p>
+    <div id="rb-7" class="rb">
+      <div class="rb-tab rb-tab-active" data-value="1">
+        <div class="rb-spot">
+          <span class="rb-txt">CGV VinCom Cinema</span>
+        </div>
+      </div><div class="rb-tab" data-value="2">
+        <div class="rb-spot">
+          <span class="rb-txt">Lotte Cinema</span>
+        </div>
+      </div><div class="rb-tab" data-value="3">
+        <div class="rb-spot">
+          <span class="rb-txt">Galaxy Cinema</span>
+        </div>
+      </div><div class="rb-tab" data-value="4">
+        <div class="rb-spot">
+          <span class="rb-txt">StarLight Cinema</span>
+        </div>
+      </div><div class="rb-tab" data-value="5">
+        <div class="rb-spot">
+          <span class="rb-txt">Metiz Cinema</span>
+        </div>
+      </div>
+    </div>
+    
+    <p>8. Which criteria do you choose to buy tickets?</p>
+    <div id="rb-8" class="rb">
+      <div class="rb-tab" data-value="1">
+        <div class="rb-spot">
+          <span class="rb-txt">Cheap</span>
+        </div>
+      </div><div class="rb-tab" data-value="2">
+        <div class="rb-spot">
+          <span class="rb-txt">Comfortable seats</span>
+        </div>
+      </div><div class="rb-tab rb-tab-active" data-value="3">
+        <div class="rb-spot">
+          <span class="rb-txt">Branded cinema</span>
+        </div>
+      </div><div class="rb-tab" data-value="4">
+        <div class="rb-spot">
+          <span class="rb-txt">Quality</span>
+        </div>
+      </div><div class="rb-tab" data-value="5">
+        <div class="rb-spot">
+          <span class="rb-txt">Others</span>
+        </div>
+      </div>
+    </div>
+  
+   
+    <p>9. What is your current job?</p>
+    <div id="rb-9" class="rb">
+      <div class="rb-tab" data-value="1">
+        <div class="rb-spot">
+          <span class="rb-txt">The student</span>
+        </div>
+      </div><div class="rb-tab" data-value="2">
+        <div class="rb-spot">
+          <span class="rb-txt">Student</span>
+        </div>
+      </div><div class="rb-tab" data-value="3">
+        <div class="rb-spot">
+          <span class="rb-txt">Working</span>
+        </div>
+      </div><div class="rb-tab rb-tab-active" data-value="4">
+        <div class="rb-spot">
+          <span class="rb-txt">Unemployment</span>
+        </div>
+      </div><div class="rb-tab" data-value="5">
+        <div class="rb-spot">
+          <span class="rb-txt">Other</span>
+        </div>
+      </div>
+    </div>
+  
+    
+    <p>10. On a 5 to 10 scale, how would you rate this survey at random?</p>
+    <div id="rb-10" class="rb">
+      <div class="rb-tab" data-value="1">
+        <div class="rb-spot">
+          <span class="rb-txt">7</span>
+        </div>
+      </div><div class="rb-tab" data-value="2">
+        <div class="rb-spot">
+          <span class="rb-txt">9</span>
+        </div>
+      </div><div class="rb-tab" data-value="3">
+        <div class="rb-spot">
+          <span class="rb-txt">10</span>
+        </div>
+      </div><div class="rb-tab" data-value="4">
+        <div class="rb-spot">
+          <span class="rb-txt">6</span>
+        </div>
+      </div><div class="rb-tab rb-tab-active" data-value="5">
+        <div class="rb-spot">
+          <span class="rb-txt">5</span>
+        </div>
+      </div>
+    </div>
+    
+    <br></br>
+
+    <form>
+      <label for="comments">11. What are your suggestions to help my survey better satisfy your needs?</label>
+      <br></br>
+      <input type="text" id="form-search" name="comment" style="height:80px; width:100%" placeholder="Enter your suggestions here...">
+    </form>
+
+    <div class="button-box">
+      <button class="button trigger" onclick="getInputElements()">Submit!</button>
+    </div>
+  
+  </div>
+</body>
