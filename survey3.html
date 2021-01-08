@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <title>Survey Creator & Manager</title>
+  <link rel="stylesheet" href="survey3.css">
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script  type="text/javascript" src="survey3.js"></script>
+</head>
+
+<body>
+    <a class="nav-link active" href="admin.html" style="color: #0000CD; font-size:25px; margin-right: 90%;">
+        <i class="fas fa-home"></i>Home
+    </a>
+
+<h1 id="title">Favorite Things</h1>
+<div id="form-outer">
+  <p id="description">
+    Show us what your favorite things are:
+  </p>
+  <form id="survey-form" method="GET" onsubmit=getInputElements()
+        action="https://crossorigin.me/https://freecodecamp.com">
+    <div class="rowTab">
+      <div class="labels">
+        <label id="name-label" for="name">* Name: </label>
+      </div>
+      <div class="rightTab">
+        <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label id="email-label" for="email">* Email: </label>
+      </div>
+      <div class="rightTab">
+        <input type="email" name="email" id="email" class="input-field" required placeholder="Enter your Email">
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label id="number-label" for="age">* Age: </label>
+      </div>
+      <div class="rightTab">
+        <input type="number" name="age" id="number" min="1" max="125" class="input-field" placeholder="Age">
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label for="currentPos">Which option best describes your favorite after-school activity?</label>
+      </div>
+      <div class="rightTab">
+        <select id="dropdown" name="currentPos" class="dropdown">
+      <option disabled value>Select an option</option>
+      <option  value="reading">Reading book</option>
+      <option value="sports">Sports</option>
+      <option value="learner">Full Time Learner</option>
+      <option value="preferNo">Arts and Crafts</option>
+      <option value="other">Play game</option>
+    </select>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label for="what is their favorite food">*What is your favorite type of food?</label>
+      </div>
+      <div class="rightTab">
+        <ul style="list-style: none;">
+          <li class="radio">
+            <label>Beef rice noodles<input name="radio buttons" value="1" type="radio" class="userRatings" ></label></li>
+          <li class="radio"><label>Pasta<input name="radio-buttons" value="2"  type="radio" class="userRatings" ></label></li>
+         <li class="radio">
+<label>Quang noodle<input name="radio-buttons" value="3" type="radio" class="userRatings" ></label></li>
+          <li class="radio">
+<label>Fast food<input name="radio-buttons" value="4" type="radio" class="userRatings" ></label></li>
+          <li class="radio">
+<label>Chicken rice<input name="radio-buttons" value="5" type="radio" class="userRatings" ></label></li>
+        </ul>
+      </div>
+    </div>
+    <div class="rowTab">
+  <div class="labels">
+    <label for="most-like">What is your favorite color? </label>
+    </div>
+  <div class="rightTab">
+       <select id="most-like"
+name="mostLike" class="dropdown">
+         <option disabled selected value>Select an option</option>
+         <option
+value="red">Red</option>
+         <option
+                 value="blue">Blue</option>
+         <option
+                 value="purple">Purple</option>
+         <option
+                 value="pink">Pink</option>
+         <option
+                 value="other">Other</option>
+         </select>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label 
+               for="preferences">What do you do in your free-time?<br>(Check all that apply):</label>
+      </div>
+      <div class="rightTab">
+     <ul li="preferences" style="list-style:none;">
+       <li class="checkbox"><label><input name="prefer" value="1" type="checkbox" class="userRatings">Watch TV</label></li>
+       <li class="checkbox"><label><input name="prefer" value="2"
+       type="checkbox"class="userRatings">Sleep</label></li>
+       
+       <li class="checkbox"><label>
+         <input name="prefer" value="3" type="checkbox"class="userRatings">Read a good book</label></li>
+       <li class="checkbox"><label>
+         <input name="prefer"value="4" type="checkbox"class="userRatings">Go outside to play</label></li>
+       
+       <li class="checkbox"><label>
+         <input name="prefer"value="5" type="checkbox"class="userRatings">Play sport</label></li>
+       
+       <li class="checkbox"><label>
+         <input name="prefer"value="6"
+         type="checkbox"class="userRatings">Relax on your couch</label></li>
+                                          <li class="checkbox"><label>
+         <input name="prefer"value="7" type="checkbox"class="userRatings">Play with your pet</label></li>
+       
+       <li class="checkbox"><label>
+         <input name="prefer"value="8" type="checkbox"class="userRatings">Go shopping</label></li>
+       
+       <li class="checkbox"><label>
+         <input name="prefer"value="9" type="checkbox"class="userRatings">Hang out with friends</label></li>
+       
+       <li class="checkbox"><label>
+         <input name="prefer"value="10" type="checkbox"class="userRatings">Do some crafty activities</label></li>
+              
+       </ul>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label for="comments">Any Comments or Suggestions?</label>
+      </div>
+      <div class="rightTab">
+        <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment" placeholder="Enter your comment here..."></textarea>
+      </div>
+    </div>
+    <button id="submit" type="submit">Submit</button>
+  </form>
+</div>
+</body>       
